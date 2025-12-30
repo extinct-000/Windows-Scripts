@@ -19,4 +19,4 @@ Get-ChildItem $extensions |
         if ($_.BaseName -match '^\d+') { [int]$matches[0] } else { 0 }
     } |
     ForEach-Object { $_.Name } |
-    Set-Content playlist.m3u
+    Set-Content playlist.m3u -Encoding UTF8
